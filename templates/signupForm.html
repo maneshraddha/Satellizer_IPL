@@ -1,5 +1,5 @@
 <div ng-controller = "SignUpControl">
-  <form  name="signupForm" novalidate ng-app="myApp" ng-submit="signup()" >
+  <form id ="form" name="signupForm" novalidate ng-app="myApp" ng-submit="signup()" >
     <div class="form-group">
       <label for="email">Username:</label>
       <input class="form-control" name="username" type="email" placeholder="Username" required ng-model="username" ng-minlength="3" ng-maxlength="50" ng-valid-required ="@" />

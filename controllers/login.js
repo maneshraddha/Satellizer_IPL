@@ -3,11 +3,8 @@ app.controller("LogControl", function($scope, $location,$rootScope,$http,$auth,$
   $scope.password = "Bridge@123";
   var data ={"emailId":$scope.username,"password":$scope.password };
   console.log('before send - ',data);
-  /**
-  @login  method sends rest to server
-  */
   $scope.login = function() {
-    $auth.login(data,{"method":"POST","url":"http://192.168.0.17:3000/login"})
+    $auth.login(data,{"method":"POST","url":"http://192.168.0.6:3000/login"})
       .then(function(data) {
         console.log('After send-',data);
           $location.path("/teams");

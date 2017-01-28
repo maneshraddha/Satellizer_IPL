@@ -56,6 +56,6 @@ app.config(function($routeProvider){
     controller:"LogoutControl"
   })
   .otherwise({
-    redirectTo : '/login'
+    redirectTo : '/teams'
   });
 });
